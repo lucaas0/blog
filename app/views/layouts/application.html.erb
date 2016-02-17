@@ -13,7 +13,7 @@
 <body>
 
   <header id="main_navigation" class ="clearfix">
-    <a href="#" class="name">Lucas Garcia</a>
+  <%= link_to "Lucas Garcia", root_path, class:"name" %>
     <nav>
     <%= link_to "Artigos", posts_path %>
 
@@ -23,6 +23,16 @@
   </header>
 
 <%= yield %>
-
+  <footer id="main_footer">
+    <p class="copyright">&copy; Lucas Garcia.</p>
+    <nav>
+      <a href="http://twitter.com/luucas1" target="_black"><i class="fa fa-twitter"></i>
+</a>
+      <a href="http://github.com/lucaas0" target="_black"><i class="fa fa-github-alt"></i>
+</a>
+      <a href="http://facebook.com" target="_black"><i class="fa fa-facebook"></i>
+</a>
+    </nav>
+  </footer>
 </body>
 </html>
