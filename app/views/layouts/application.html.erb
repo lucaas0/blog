@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Lucas Garcia - Developer.</title>
+  <meta charset ="utf-8">
+ 
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <header id="main_navigation" class ="clearfix">
+    <a href="#" class="name">Lucas Garcia</a>
+    <nav>
+    <%= link_to "Artigos", posts_path %>
+
+      <a href="">Projetos</a>
+      <a href="">Contato</a>
+    </nav>
+  </header>
 
 <%= yield %>
 
